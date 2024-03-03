@@ -1,0 +1,16 @@
+﻿//Datos del trapecio
+double ladosa = 5;
+double basema = 10;
+double baseme = 4;
+double altura = 10;
+double profundidad = 12;
+
+double perimetro = Application.Trapecio.Perimetro(ladosa, basema, baseme);
+double area = Application.Trapecio.Area(altura, basema, baseme);
+double volumen = Application.PrismaTrapezoidal.Volumen(area, profundidad);
+
+Console.WriteLine($"El perímetro de la base de un Prisma Trapezoidal de lados a = {ladosa}cm, base mayor b = {basema}cm y una base menor c = {baseme}cm: Es de {perimetro}cm");
+
+Console.WriteLine($"El área de la base de un Prisma Trapezoidal de altura d = {altura}cm, base mayor b = {basema}cm y una base menor c = {baseme}cm:Es de {area}cm2");
+
+Console.WriteLine($"El volumen un Prisma Cuadrangular con un área de la base de {area}cm2 y {profundidad}cm de profundidad es {volumen}cm3");
